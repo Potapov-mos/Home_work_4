@@ -6,3 +6,22 @@
 // 3, 5 -> 243 (3⁵)
 
 // 2, 4 -> 16
+
+
+Console.Write("Введите первое число: ");
+int a = Convert.ToInt32(Console.ReadLine());
+Console.Write("Введите второе число: ");
+int b = Convert.ToInt32(Console.ReadLine());
+
+int num = a;
+
+if (b >= 1)
+{
+    for (int i = 1; i < b; i++)
+    {
+        num = num * a;
+    }
+    Console.WriteLine($"Число {a} в {b}-ой степени = {num}");
+}
+else
+    Console.WriteLine("Вы ввели не натуральное число!");
